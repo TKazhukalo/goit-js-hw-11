@@ -10,19 +10,9 @@ import SimpleLightbox from "simplelightbox";
 // Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
-
-
-/*const refs = {
-  formEl: document.querySelector('#search-form'),
-  gallery:document.querySelector('.gallery')
-}*/
 const newsApiService = new NewsApiServise();
 const loadMoreBtn = new LoadMoreBtn({ selector: '.load-more', hidden: true });
 const lightbox = new SimpleLightbox('.gallery a', { captions: true, captionDelay: 250, captionsData: 'alt',});
-
-
-
 
 
 function onSearchQuery(e) {
@@ -68,7 +58,6 @@ function fetchPixabay() {
 function handleErr() {
     console.log('Error!');
 }
-
 
 /*function fetchPixabay(content, page) {
   const option = new URLSearchParams({
