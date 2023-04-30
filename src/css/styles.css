@@ -1,14 +1,11 @@
-
-
 body{
-   background-color: #e1e0f8;
+   background-color: #ffe0bc;
    margin-left: auto;
     margin-right: auto;
       
 }
 input{
- 
- width: 300px;
+width: 300px;
 height: 40px;
 padding-left: 38px;
 padding-right: 38px;
@@ -24,8 +21,8 @@ transition: outline #4D5AE5;
 
 
 input:focus {
-    outline-color: #1728e2;
-    border: yellow;
+outline-color: #1728e2;
+
 
 }
 
@@ -37,53 +34,53 @@ button {
 
     padding: 12px 24px;
     margin: 0 auto;
-  border: 1px solid transparent;
+    border: 1px solid transparent;
     color: #F4F4FD;
     background-color: #4D5AE5;
     font-size: 16px;
- cursor: pointer;
- text-align: center;
- border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
 
   
 }
 button.is-hidden{
-display: none;
+    display: none;
 }
 button>.spinner.is-hidden{
     display: none;
 }
 button:hover, button:focus, .button:active {
-  color: rgb(230, 255, 5);
-  background-color: #4D5AE5;
-  cursor: pointer;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    color: rgb(230, 255, 5);
+    background-color: #4D5AE5;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery{
     display: flex;
-   flex-wrap: wrap;
-   gap: 10px;
-   padding: 0;
-  margin-bottom: 20px;
-  display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .img-style{
 
-width: 100%;
-height: 200px;
-object-fit: cover;
-display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 .info-item{
-text-align: center;
-padding-left: 5px;
-padding-right: 5px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .search-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     margin-bottom: 20px;
@@ -95,14 +92,14 @@ padding-right: 5px;
 .info{
     display: flex;
    /* justify-content: space-around;*/
-padding-left: 10px;
-padding-right: 10px;
-background-color: #e1fd93;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #e1fd93;
 
 }
 .search-form{
-     display: block;
-   align-items: center;
+    display: block;
+    align-items: center;
 
    
 }
