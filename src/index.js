@@ -46,13 +46,13 @@ function clearImages() {
 
 function fetchPixabay() {
   loadMoreBtn.disabled();
-  newsApiService.fetchPixabay().then(({ data }) => {
+  newsApiService.fetchPixabay().then(({data }) => {
     if (data.total===0) {
       Notify.info(`Sorry, there are no images matching your search query ${newsApiService.searchQuery} Please try again.`);
       loadMoreBtn.hide();
       return;
     }
-    appendMarkupImage(data);
+    appMarkupImage(data);
     onScrolling();
     lightbox.refresh();
     const { totalHits } = data;
@@ -101,7 +101,7 @@ function handleErr() {
 
 }*/
 
-function appendMarkupImage(data) {
+function appMarkupImage(data) {
   refs.galleryEl.insertAdjacentHTML('beforeend', createMarkup(data));
 
 }

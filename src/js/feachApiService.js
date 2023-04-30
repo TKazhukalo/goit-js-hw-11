@@ -4,8 +4,9 @@ const API_KEY = '35838219-a52003e23aa08df0724263fac';
 const OPTIONS= 'per_page=40&orientation=horizontal&image_type=photo&safesearch=true';
 class NewsApiServise {
     constructor() {
+            this.searchQuery = '';
         this.page = 1;
-        this.searchQuery = '';
+    
     }
   async fetchPixabay() {
       try {

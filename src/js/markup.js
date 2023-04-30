@@ -1,5 +1,5 @@
-function createMarkup({ imgs }) {
-const markup = imgs.map(({ tags, webformatURL, largeImageURL, likes, views, comments, downloads }) =>
+function createMarkup({ hits }) {
+const markup = hits.map(({ tags, webformatURL, largeImageURL, likes, views, comments, downloads }) =>
     `<div class="photo-card">
   <a href="${largeImageURL}"><img src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
   <div class="info">
